@@ -2,7 +2,7 @@ export const MESSAGE = Object.freeze({
   GET_PURCHASE_AMOUNT: `구입금액을 입력해 주세요.\n`,
   GET_WINNING_NUMBER: `\n당첨 번호를 입력해 주세요.\n`,
   GET_BONUS_NUMBER: `\n보너스 번호를 입력해 주세요.\n`,
-  SHOW_PURCHASE_HISTORY: (number) => `\n${number}개를 구매했습니다.`,
+  SHOW_PURCHASE_HISTORY: (number) => `${number}개를 구매했습니다.`,
   SHOW_RESULT: ({ first, second, third, fourth, fifth }) =>
     `\n당첨 통계\n---\n3개 일치 (5,000원) - ${fifth}개\n4개 일치 (50,000원) - ${fourth}개\n5개 일치 (1,500,000원) - ${third}개\n5개 일치, 보너스 볼 일치 (30,000,000원) - ${second}개\n6개 일치 (2,000,000,000원) - ${first}개`,
   SHOW_PROFIT: (profit) => `총 수익률은 ${profit}%입니다.`,

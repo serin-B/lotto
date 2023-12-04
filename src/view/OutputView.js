@@ -7,7 +7,7 @@ const OutputView = {
 
   printLottos(lottos) {
     for (let i = 0; i < lottos.length; i++) {
-      Console.print(lottos[i]);
+      Console.print(`[${lottos[i].join(", ")}]`);
     }
   },
 };

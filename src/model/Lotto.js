@@ -10,7 +10,7 @@ class Lotto {
   }
 
   #validate(numbers) {
-    isValidLottoNumber(numbers);
+    isValidLottoNumber(numbers.join(","));
   }
 
   checkResult(winningNumber, bonusNumber) {

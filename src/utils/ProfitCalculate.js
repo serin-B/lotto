@@ -6,7 +6,7 @@ export const getProfit = (amount, result) => {
     sumProfit += result[place] * PROFIT[place];
   }
 
-  return roundingDecimals(sumProfit / amount);
+  return roundingDecimals((sumProfit / amount) * 100);
 };
 
 function roundingDecimals(number) {

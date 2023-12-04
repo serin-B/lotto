@@ -18,7 +18,6 @@ class LottoMachine {
     const amount = await this.#getAmount();
 
     const lottos = this.#publishLottos(amount);
-    console.log(this.#lottos);
     OutputView.print(MESSAGE.SHOW_PURCHASE_HISTORY(amount));
     OutputView.printLottos(this.#lottos);
 
@@ -27,6 +26,7 @@ class LottoMachine {
 
     const result = this.#getResult(lottos, winningNumber, bonusNumber);
     const profit = getProfit(amount, result);
+    OutputView.print(MESSAGE.SHOW_RESULT(result));
     OutputView.print(MESSAGE.SHOW_PROFIT(profit));
   }
 
